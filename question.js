@@ -2,11 +2,11 @@
 let questions = [
     {
     numb: 9,
-    question: "Ce petit ruisseau  alimente un plan d’eau des plus agréable, après duquel il fera bon se détendre, comment se nomme t’il ?",
-    answer: "1) le plan d’eau de la rivière",
+    question: "Ce petit ruisseau  alimente un plan d’eau des plus agréables, auprès duquel il fera bon se détendre. Comment se nomme-t-il ?",
+    answer: "1) Le plan d’eau de la rivière",
     options: [
-      "1) le plan d’eau de la rivière",
-      "2) le plan d’eau de canitrot",
+      "1) Le plan d’eau de la rivière",
+      "2) Le plan d’eau de canitrot",
       "3) Aiguelèze ",
      
     ]

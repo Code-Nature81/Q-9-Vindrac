@@ -96,8 +96,8 @@ function showQuetions(index){
     let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
     + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
-    + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>';
-    //+ '<div class="option"><span>'+ questions[index].options[3] +'</span></div>'
+    + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
+    + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
     
@@ -152,15 +152,15 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>Félicitation! 🎉, vous avez un score de  <p>'+ userScore +'</p> sur <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>Félicitations! 🎉, vous avez un score de  <p>'+ userScore +'</p> sur <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore >= 1){ // if user scored more than 1
-        let scoreTag = '<span> Félicitation! 🎉, <p>'+ userScore +'</p> sur <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> Félicitations! 🎉, <p>'+ userScore +'</p> sur <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
-        let scoreTag = '<span> Tu peux mieux faire ! 😐, <p>'+ userScore +'</p> sur <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> Vous pouvez mieux faire ! 😐, <p>'+ userScore +'</p> sur <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
